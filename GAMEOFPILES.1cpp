@@ -1,0 +1,36 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int tc;
+    
+	for(int i=0;i<tc;i++){
+	    int T;
+	    cin>>T;
+	    int A[T];
+       int min=0;
+	     for(int j=0;j<T;j++){
+	       cin>>A[j];
+	       if (min==0){
+	        min=A[0];
+	          }
+	       if(A[j]<min)
+	         min=A[j];
+	     }
+	    int Winner;
+	    Winner=min%2;
+	    if(Winner==1){
+	        cout<<"CHEF"<<endl;
+	    }
+	   else
+	   cout<<"CHEFINA"<<endl;
+	    
+	    }
+	    
+	     
+	     
+	    
+	
+	return 0;
+}
